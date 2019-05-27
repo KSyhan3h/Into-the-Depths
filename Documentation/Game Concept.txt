@@ -1,0 +1,13 @@
+Into the Depths of Hell
+2D RPG | Strategy | Turn Based
+
+References:
+- Kamidori Alchemy
+
+Features to Include:
+- Pathing
+- Dialogue
+- Fighting
+
+Coding Approach:
+- Inheritance

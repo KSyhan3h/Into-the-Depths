@@ -1,0 +1,1 @@
+public class Cancel : Actions { }

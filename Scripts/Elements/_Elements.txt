@@ -1,0 +1,68 @@
+Flame
+Aqua
+Wind
+Terra
+---------
+Physical
+MetaPhysical
+------------
+
+PHYSICAL
+------------
+    Physical 	100% vs	100% 	Terra
+    Physical 	100% vs	100% 	Aqua
+    Physical 	100% vs	100% 	Flame
+    Physical 	100% vs	100% 	Wind
+    Physical 	100% vs	100% 	Physical
+    Physical 	100% vs	100% 	MetaPhysical
+------------
+
+METAPHYSICAL
+------------
+MetaPhysical    100% vs 100% 	Terra
+MetaPhysical    100% vs 100% 	Aqua
+MetaPhysical    100% vs 100% 	Flame
+MetaPhysical    100% vs 100% 	Wind
+MetaPhysical    100% vs 100% 	Physical
+MetaPhysical    100% vs 100% 	MetaPhysical
+------------
+
+FLAME
+------------
+	Flame 		100% vs 100% 	Terra
+	Flame 		100% vs 100% 	Aqua
+	Flame 		100% vs 100% 	Flame
+	Flame 		100% vs 100% 	Wind
+	Flame 		100% vs 100% 	Physical
+	Flame 		100% vs 100% 	MetaPhysical
+------------
+
+AQUA
+------------
+	Aqua 		100% vs 100% 	Terra
+	Aqua 		100% vs 100% 	Aqua
+	Aqua 		100% vs 100% 	Flame
+	Aqua 		100% vs 100% 	Wind
+	Aqua 		100% vs 100% 	Physical
+	Aqua 		100% vs 100% 	MetaPhysical
+------------
+
+WIND
+------------
+	Wind 		100% vs 100% 	Terra
+	Wind 		100% vs 100% 	Aqua
+	Wind 		100% vs 100% 	Flame
+	Wind 		100% vs 100% 	Wind
+	Wind 		100% vs 100% 	Physical
+	Wind 		100% vs 100% 	MetaPhysical
+------------
+
+TERRA
+------------
+	Terra 		100% vs 100% 	Terra
+	Terra 		100% vs 100% 	Aqua
+	Terra 		100% vs 100% 	Flame
+	Terra 		100% vs 100% 	Wind
+	Terra 		100% vs 100% 	Physical
+	Terra 		100% vs 100% 	MetaPhysical
+------------

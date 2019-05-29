@@ -1,4 +1,4 @@
-public abstract class StatPadding : Effects
+public class StatPadding : EffectsData
 {
     public TargetStats targetStats;
 

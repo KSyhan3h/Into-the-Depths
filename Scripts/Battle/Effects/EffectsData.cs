@@ -1,20 +1,24 @@
 using UnityEngine;
 
-public abstract class Effects
+public abstract class EffectsData : ScriptableObject
 {
+	public string			name;
     public string           description;
+	public int				durationCount;
     public EffectsTarget    target;
     public EffectDuration   duration;
+	public MonoBehaviour	script;
 
     public enum EffectsTarget 
     {
-        Everyone,
         Self,
+		Party,
         Allies,
-        Enemies
-    }
+        Enemies,
+		Everyone
+	}
 
-    public enum EffectDuration
+	public enum EffectDuration
     {
         Actions,
         Turns,
@@ -22,4 +26,8 @@ public abstract class Effects
         Missions,  
         Permanent
     }
+
+	public void Invoke () 
+	{ 
+	}
 }    

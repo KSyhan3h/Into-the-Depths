@@ -1,5 +1,3 @@
-using System.Collections.Generic;
-
 [System.Serializable]
 public class Stats
 {
@@ -30,9 +28,40 @@ public class Stats
     public MagicDefense magicDefense;
     
     public Accuracy     accuracy;
-    public Evasion      evasion; 
+    public Evasion      evasion;
 
-    public Stats () { }
+	#region CONSTRUCTOS
+	public Stats () 
+	{ 
+		this.level          = new Level ();
+		this.levelCap		= new LevelCap ();
+        this.experience     = new Experience ();
+
+        this.skillPoints    = new SkillPoints ();
+        this.movement       = new Movement ();
+
+        this.vitality       = new Vitality ();
+        this.dexterity      = new Dexterity ();
+        this.spirit         = new Spirit ();
+        
+        this.hp             = new HP ();
+        this.hpRegen        = new HPRegen ();
+        
+        this.mp             = new MP ();
+        this.mpRegen        = new MPRegen ();
+        
+        this.damage         = new Damage ();
+        this.defense        = new Defense ();
+        
+        this.critDamage     = new CritDamage ();
+        this.critRate       = new CritRate ();
+        
+        this.magicDamage    = new MagicDamage ();
+        this.magicDefense   = new MagicDefense ();
+
+        this.accuracy       = new Accuracy ();
+        this.evasion        = new Evasion ();
+	}
 
     public Stats (Stats stats)
     {
@@ -65,16 +94,18 @@ public class Stats
         this.accuracy       = stats.accuracy;
         this.evasion        = stats.evasion;
     }
+	#endregion
 
-    // # Rule in calculating stats
-    // - each level, units will gain 6 stat points
-    // - for playable characters, 3 points will be automatically allocated
-    //   while the remaining point will be allocated by the player manually
-    // - for non-playable characters; all of the stats will be allocated immediately
-    //
-    // - the movement stat/trait is independent from all of the other stats
-    // - movement default value is 4 for level 1; each level there will be an automatic allocation
-    public static Stats CalculateStats (Stats baseStats, Stats statsPadding = null) 
+	#region CALCULATION
+	// # Rule in calculating stats
+	// - each level, units will gain 6 stat points
+	// - for playable characters, 3 points will be automatically allocated
+	//   while the remaining point will be allocated by the player manually
+	// - for non-playable characters; all of the stats will be allocated immediately
+	//
+	// - the movement stat/trait is independent from all of the other stats
+	// - movement default value is 4 for level 1; each level there will be an automatic allocation
+	public static Stats CalculateStats (Stats baseStats, Stats statsPadding = null) 
     {
         Stats newStats = new Stats (baseStats);
 
@@ -158,4 +189,5 @@ public class Stats
         Stats newStats = new Stats ();
         return newStats;
     }
+	#endregion
 }

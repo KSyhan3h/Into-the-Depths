@@ -17,9 +17,9 @@ public class BattleStats
     #endregion
 
     #region Effects
-    public List<Effects>        onActionEffects;
-    public List<Effects>        onTurnEffects;
-    public List<Effects>        onCombatEffects;
+    public List<EffectsData>        onActionEffects;
+    public List<EffectsData>        onTurnEffects;
+    public List<EffectsData>        onCombatEffects;
     
     public List<StatPadding>    statPaddings;
 
@@ -33,9 +33,9 @@ public class BattleStats
     public BattleStats (Entity unit)
     {
         this.unit       = unit;
-        onActionEffects = new List<Effects>     ();
-        onTurnEffects   = new List<Effects>     ();
-        onCombatEffects = new List<Effects>     ();
+        onActionEffects = new List<EffectsData>     ();
+        onTurnEffects   = new List<EffectsData>     ();
+        onCombatEffects = new List<EffectsData>     ();
         statPaddings    = new List<StatPadding> ();
 
         // Set Events

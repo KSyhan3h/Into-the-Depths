@@ -7,23 +7,18 @@ public class Item
     public ItemData         data;
     public int              quantity;
 
-    public void AddQuantity (int quantity) 
-    {
-        this.quantity += quantity;
-    }
-
-    public void RemoveQuantity (int quantity)
-    {
-        this.quantity -= quantity;
-    }
+	public void InvokeEffect () 
+	{ 
+		// Equip or Consume Item
+	}
 
     #region Constructors
     public Item () { }
 
     public Item (ItemData data)
     {
-        this.data = data;
-        this.spriteObject = new SpriteObject (data.name);
+        this.data			= data;
+        this.spriteObject	= SpriteObject.CreateInstance (data.name);
     }
     #endregion
 }

@@ -1,15 +1,17 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 // Handles Animation and Appearance of Object
-public class SpriteObject
+public class SpriteObject : MonoBehaviour
 {
-    public GameObject       gameObject;
-    public SpriteRenderer   renderer;       // Appearance
-    // Animation
+    public Image		image;     
+	public Animation	s_animation;
 
-    public SpriteObject (string name = "")
-    {
-        gameObject  = new GameObject (name);
-        renderer    = gameObject.AddComponent<SpriteRenderer> ();
-    }
+	public static SpriteObject CreateInstance (string name = "New SpriteObject") 
+	{
+		SpriteObject so = new GameObject (name)	.AddComponent<SpriteObject> ();
+		so.image		= so.gameObject			.AddComponent<Image>		();
+		so.s_animation	= so.gameObject			.AddComponent<Animation>	();
+		return so;
+	}
 }

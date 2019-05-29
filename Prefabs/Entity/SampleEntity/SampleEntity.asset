@@ -10,11 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5e416d0bbe8837540bff702a45bb9f95, type: 3}
-  m_Name: EntityData
+  m_Name: SampleEntity
   m_EditorClassIdentifier: 
   name: Sample Entity
   stats:
     level:
+      value: 0
+    levelCap:
       value: 0
     experience:
       value: 0
@@ -53,5 +55,4 @@ MonoBehaviour:
     evasion:
       value: 0
   statScaler: {fileID: 11400000, guid: 365ac6c82cf268d4191148c200c74f31, type: 2}
-  inventory:
-    maxCapacity: 0
+  inventory: {fileID: 11400000, guid: 8764d8cd750d5244894396d649c73926, type: 2}

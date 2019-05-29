@@ -9,12 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2fdf52fc3c21b834990a41d135454e81, type: 3}
-  m_Name: Armor
+  m_Script: {fileID: 11500000, guid: 77070c8ec20d00c45987014f6e97b039, type: 3}
+  m_Name: Skill
   m_EditorClassIdentifier: 
-  name: 
-  description: 
-  sprite: {fileID: 0}
-  maxCapacity: 0
-  stackable: 0
-  armorPart: 0
+  name: Fireball
+  description: Fire projectile
+  effects:
+  - {fileID: 0}

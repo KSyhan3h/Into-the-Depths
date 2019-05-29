@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 537fc284335897c458339cd817ef8f6b, type: 3}
-  m_Name: StatScaler
+  m_Name: SampleEntity_StatScaler
   m_EditorClassIdentifier: 
   maxAllocation: 3
   randomizedAllocation: 0
@@ -22,7 +22,7 @@ MonoBehaviour:
     experience:
       value: 0
     movement:
-      value: 104256750
+      value: 0
     skillPoints:
       value: 0
     vitality:

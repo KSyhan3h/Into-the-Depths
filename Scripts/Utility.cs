@@ -20,4 +20,11 @@ public static class Utility
 
 		return asset;
 	}
+
+	public static ScriptableObject CreateAsset<T> (string path, string name, bool singleInstanceOnly) where T : ScriptableObject
+	{ 
+		// Find any other instances of this type (T) in the project
+		// If there is already an existing instance then return that instance instead
+		return CreateAsset<T> (path, name);
+	}
 }

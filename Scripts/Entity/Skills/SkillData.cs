@@ -6,7 +6,8 @@ public class SkillData : ScriptableObject
 {
 	public string				name;
 	public string				description;
-	public List<EffectsData>	effects;        // Effects		- Damage, heal, stats etc.
+	public int					cp;						// Capacity Points		- Determines how much capacity the skills need to be included in the 
+	public List<EffectsData>	effects;				// Effects				- Damage, heal, stats etc.
 
 
 	// Preparation	- How long to activate

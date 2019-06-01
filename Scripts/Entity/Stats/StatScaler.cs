@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "StatScaler", menuName = "RPG Toolkit/Create/Entity/StatScaler")]
+[CreateAssetMenu(fileName = "StatScaler", menuName = "RPG Toolkit/StatScaler")]
 public class StatScaler : ScriptableObject 
 {
 	public int			maxAllocation;

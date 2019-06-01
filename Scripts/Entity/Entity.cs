@@ -11,9 +11,6 @@ public class Entity
 	public Stats			bonusStats;
 	public Stats			finalStats;
 
-	public List<Actions>	actions;
-	public List<SkillData>	skills;
-
 	#region Actions
 	public void AddActions<T> (params Actions[] _actions)
 	{
